@@ -31,3 +31,5 @@ A high-action, 2D space-shooter!
 
 ### TODO
 - [ ] Icon for game window
+- [ ] Create 'Aliases' file to mitigate deprecation extra-work
+- [ ] Clean up canvas/window size mis-matching
