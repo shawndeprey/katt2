@@ -30,4 +30,4 @@ A high-action, 2D space-shooter!
 * Inno Setup http://www.jrsoftware.org/isinfo.php
 
 ### TODO
-* Icon for game window
+[ ] Icon for game window
