@@ -1,59 +1,46 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-	<title>pixi.js example 1</title>
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-			background-color: #000000;
-			width: 100%;
-			height: 100%;
-		}
-	</style>
-	<script src="pixi.js"></script>
+	<head>
+		<style>
+			body
+			{
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: rgb(0,0,0);
+			}
+		</style>
+		<script src="pixi.min.js"></script>
+	</head>
+	<body>
+		<script>
+			var renderer = PIXI.autoDetectRenderer(800, 600, {backgroundColor: 0x66FF99});
+			document.body.appendChild(renderer.view);
 
-</head>
-<body>
-	<script>
-	
-	// create an new instance of a pixi stage
-	var stage = new PIXI.Stage(0x66FF99);
-	
-	// create a renderer instance
-	var renderer = PIXI.autoDetectRenderer(400, 300);
-	
-	// add the renderer view element to the DOM
-	document.body.appendChild(renderer.view);
-	
-	requestAnimFrame( animate );
-	
-	// create a texture from an image path
-	var texture = PIXI.Texture.fromImage("bunny.png");
-	// create a new Sprite using the texture
-	var bunny = new PIXI.Sprite(texture);
-	
-	// center the sprites anchor point
-	bunny.anchor.x = 0.5;
-	bunny.anchor.y = 0.5;
-	
-	// move the sprite t the center of the screen
-	bunny.position.x = 200;
-	bunny.position.y = 150;
-	
-	stage.addChild(bunny);
-	
-	function animate() {
-	
-		requestAnimFrame( animate );
-	
-		// just for fun, lets rotate mr rabbit a little
-		bunny.rotation += 0.1;
-		
-		// render the stage   
-		renderer.render(stage);
-	}
-	</script>
+			var stage = new PIXI.Container();
 
+			var texture = PIXI.Texture.fromImage('../art/bunny.png');
+
+			var bunny = new PIXI.Sprite(texture);
+
+			bunny.anchor.x = 0.5;
+			bunny.anchor.y = 0.5;
+
+			bunny.position.x = 200;
+			bunny.position.y = 150;
+
+			stage.addChild(bunny);
+
+			animate();
+
+			function animate()
+			{
+				requestAnimationFrame(animate);
+
+				bunny.rotation += 0.1;
+
+				renderer.render(stage);
+			}
+		</script>
 	</body>
 </html>
