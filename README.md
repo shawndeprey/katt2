@@ -1,20 +1,18 @@
-# katt2
+# Ethereal
 
-Kill all the Things! Dos
+A high-action, 2D space-shooter!
 
 ### General Game Stuff
 
-* Simple game
-* not too complicated
-* must be FINISHED
+* Simple game, not too complicated
+* Must be completeable
 * Javascript/HTML5
 * Space generation (random)
 * 2D
 * Fast-paced
-* MOAR AKSHUN!!1!
+* High-action
 * Parallax backgrounds with 'forground' layer (above player)
-* all teh particles
-* Smexy femail lead
+* Particles!!!
 * Special Move indicators (Capcom vs Marvel)
 
 ### Game Mechanics
@@ -28,4 +26,10 @@ Kill all the Things! Dos
 ### Technology
 
 * Node Webkit Wrapper: (https://github.com/nwjs/nw.js)
-* Pixi.js http://www.pixijs.com/
+* Pixi.js v3.0.11 http://www.pixijs.com/
+* Inno Setup http://www.jrsoftware.org/isinfo.php
+
+### TODO
+- [ ] Icon for game window
+- [ ] Create 'Aliases' file to mitigate deprecation extra-work
+- [ ] Clean up canvas/window size mis-matching
