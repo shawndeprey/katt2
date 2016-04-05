@@ -1,0 +1,1 @@
+REM "C:\Program Files (x86)\Inno Setup 5\ISCC.exe" /q "deploy/deploy.iss"
