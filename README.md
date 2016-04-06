@@ -50,3 +50,11 @@ A high-action, 2D space-shooter!
 - [ ] TASK:			Build script can choose which version to build; dev, testing, production, etc...
 - [ ] TASK:			Setup deploy script to build installer for deployment
 - [ ] TASK:			Create license file
+
+
+Debug builds
+Build increments version
+
+
+Make Paths variable
+Make all paths relative
