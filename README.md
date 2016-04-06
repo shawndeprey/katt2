@@ -35,10 +35,10 @@ A high-action, 2D space-shooter!
 - [ ] STORY:		Icon for game window
 - [ ] STORY: 		Create 'Aliases' file to mitigate deprecation extra-work
 - [ ] STORY:		Auto-resize canvas to fit window
-- [ ] STORY:		In build_d.bat, store base folder name in variable to reset it later
+- [x] STORY:		In build_d.bat, store base folder name in variable to reset it later
 
 - [ ] BUG:			Clean up canvas/window size mis-matching
-- [ ] BUG:			Put in pause breaks for all tool scripts
+- [x] BUG:			Put in pause breaks for all tool scripts (Debug mode only)
 
 - [ ] RESEARCH:		How to easily add new assets to Inno Setup Script.
 - [ ] RESEARCH:		How do updates/patches (Like ClickOnce for C#) work.
@@ -50,11 +50,4 @@ A high-action, 2D space-shooter!
 - [ ] TASK:			Build script can choose which version to build; dev, testing, production, etc...
 - [ ] TASK:			Setup deploy script to build installer for deployment
 - [ ] TASK:			Create license file
-
-
-Debug builds
-Build increments version
-
-
-Make Paths variable
-Make all paths relative
+- [ ] TASK:			Build increments version

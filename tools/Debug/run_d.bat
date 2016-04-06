@@ -1,6 +1,5 @@
 REM Get our base file path
 SET BASE_FILE_PATH=%CD%\%1
-SET CURRENT_FILE_PATH=%CD%\%1
 
 REM Clean up our environment
 call clean_d.bat

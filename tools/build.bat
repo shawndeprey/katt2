@@ -12,7 +12,7 @@ xcopy /s /i /y "nwjs" "build" >nul 2>&1
 
 REM Zip app/ into Ethereal.zip
 echo Building application...
-CScript tools/zip.vbs "D:\002 - Development\005 - HTML\katt2\app" "D:\002 - Development\005 - HTML\katt2\Ethereal.zip" >nul 2>&1
+CScript tools/zip.vbs "%CD%\app" "%CD%\Ethereal.zip" >nul 2>&1
 
 REM Rename Ethereal.zip to Ethereal.nw
 ren Ethereal.zip Ethereal.nw >nul 2>&1
@@ -27,4 +27,4 @@ del "Ethereal.nw" >nul 2>&1
 REM CD back into the tools directory
 cd "tools" >nul 2>&1
 
-echo Build complete!
+Pause
