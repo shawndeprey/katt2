@@ -1,5 +1,7 @@
-SET FilePath=%CD%\%1
+@echo off
 
-echo %FilePath%
+SET CURRENT_FILE_PATH=%CD%\%1 >nul 2>&1
+
+echo %CURRENT_FILE_PATH%
 
 pause

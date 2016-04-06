@@ -1,1 +1,1 @@
-RD /S /Q "../build" >nul 2>&1
+RD /S /Q "../../build" >nul 2>&1

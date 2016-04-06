@@ -1,6 +1,5 @@
 REM CD up a directory so that we aren't running from within tools/
 cd "../../"
-SET CURRENT_FILE_PATH=%CD%\%1
 
 Pause
 
@@ -17,7 +16,7 @@ Pause
 
 REM Zip app/ into Ethereal.zip
 echo Building application...
-CScript tools/zip.vbs "%CURRENT_FILE_PATH%app" "%CURRENT_FILE_PATH%Ethereal.zip"
+CScript tools/zip.vbs "%CD%app" "%CD%Ethereal.zip"
 
 Pause
 
@@ -39,7 +38,6 @@ Pause
 
 REM CD back into the tools directory
 cd "tools/Debug"
-SET CURRENT_FILE_PATH=%CD%\%1
 
 Pause
 
