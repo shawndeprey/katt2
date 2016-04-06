@@ -35,8 +35,10 @@ A high-action, 2D space-shooter!
 - [ ] STORY:		Icon for game window
 - [ ] STORY: 		Create 'Aliases' file to mitigate deprecation extra-work
 - [ ] STORY:		Auto-resize canvas to fit window
+- [ ] STORY:		In build_d.bat, store base folder name in variable to reset it later
 
 - [ ] BUG:			Clean up canvas/window size mis-matching
+- [ ] BUG:			Put in pause breaks for all tool scripts
 
 - [ ] RESEARCH:		How to easily add new assets to Inno Setup Script.
 - [ ] RESEARCH:		How do updates/patches (Like ClickOnce for C#) work.
