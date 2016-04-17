@@ -8,9 +8,5 @@
 		"height": 600,
 		"fullscreen": false,
 		"resizable": false
-	},
-	"devDependencies":
-	{
-		"babel-cli": "^6.7.5"
 	}
 }
