@@ -16,31 +16,30 @@
 		<script src="libraries/soundjs-0.6.2.min.js"></script>
 		<script src="libraries/tweenjs-0.6.2.min.js"></script>
 		<script src="libraries/webgl-0.8.2.min.js"></script>
+		
+		<!-- Engine -->
+		<script src="Engine.js"></script>
+		<script src="Color.js"></script>
+		<script src="Shape.js"></script>
+		<script src="Rectangle.js"></script>
+		<script src="Circle.js"></script>
+
+		<!-- Include Assets -->
+		<style type="text/css">
+
+			@font-face {
+				font-family:"Roboto";
+				src: url("../assets/fonts/RobotoTTF/Roboto-Black.ttf")
+			}
+
+		</style>
 	</head>
-	<body onload="Init();">
+	<body onload="main();">
 		<canvas id="canvas" width="800" height="600">
 		We're sorry, but a modern browser that supports HTML5 canvas is required.
 		</canvas>
 	</body>
 	<script>
-		function Init()
-		{
-			var stage = new createjs.Stage("canvas");
-
-			var data = {
-				images: ["../assets/sprites/bunny.png"],
-				frames: [36, 37],
-				animations: {
-					stand: 0
-				}
-			};
-
-			var spriteSheet = new createjs.SpriteSheet(data);
-			var animation = new createjs.Sprite(spriteSheet, "stand");
-
-			stage.addChild(animation);
-
-			stage.update();
-		}
+		
 	</script>
 </html>

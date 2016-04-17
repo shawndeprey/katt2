@@ -26,12 +26,22 @@ A high-action, 2D space-shooter!
 
 ### Technology
 
+* NodeJS v5.10.1		https://nodejs.org/dist/v5.10.1/node-v5.10.1-x64.msi
 * Node Webkit Wrapper	https://github.com/nwjs/nw.js
-* Pixi.js v3.0.11		http://www.pixijs.com/
+* CreateJS				http://www.createjs.com/
 * Inno Setup			http://www.jrsoftware.org/isinfo.php
 
 ### TODO
 - [ ] Story:		Asset Loader
+- [	] Story:		Set up Material Design style GUI in canvas
+- [x] Story:			Create basic shape classes
+- [x] Story:				Rectangle
+- [x] Story:				Circle
+- [x] Story:			Create basic color class
+- [ ] Story:			Create a text class
+- [x] Story:				Use Roboto font
+- [ ] Story:		Image support for shapes
+- [ ] Story:		Sprite class
 
 - [ ] BUG:			Clean up canvas/window size mis-matching
 - [x] BUG:			Put in pause breaks for all tool scripts (Debug mode only)

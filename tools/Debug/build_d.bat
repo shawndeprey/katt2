@@ -16,7 +16,7 @@ Pause
 
 REM Zip app/ into Ethereal.zip
 echo Building application...
-CScript tools/zip.vbs "%CD%app" "%CD%Ethereal.zip"
+CScript tools/zip.vbs "%CD%\app" "%CD%\ Ethereal.zip"
 
 Pause
 
