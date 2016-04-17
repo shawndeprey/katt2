@@ -1,26 +1,31 @@
-function Rectangle(stage, params)
+if (typeof _RECTANGLE_ == 'undefined')
 {
-	params = params || {};
-	Shape.call(this, stage, params);
+	_RECTANGLE_ = 'defined'
 
-	this.width = params.width || 10;
-	this.height = params.height || 10;
-}
+	function Rectangle(stage, params)
+	{
+		params = params || {};
+		Shape.call(this, stage, params);
 
-Rectangle.prototype = Object.create(Shape.prototype);
-Rectangle.prototype.constructor = Rectangle;
+		this.width = params.width || 10;
+		this.height = params.height || 10;
+	}
 
-Rectangle.prototype.setWidth = function(w)
-{
-	this.width = w;
-}
+	Rectangle.prototype = Object.create(Shape.prototype);
+	Rectangle.prototype.constructor = Rectangle;
 
-Rectangle.prototype.setHeight = function(h)
-{
-	this.height = h;
-}
+	Rectangle.prototype.setWidth = function(w)
+	{
+		this.width = w;
+	}
 
-Rectangle.prototype.Draw = function()
-{
-	this._shape.graphics.beginFill(this.RGBA()).drawRect(this.x, this.y, this.width, this.height);
+	Rectangle.prototype.setHeight = function(h)
+	{
+		this.height = h;
+	}
+
+	Rectangle.prototype.Draw = function()
+	{
+		this._shape.graphics.beginFill(this.RGBA()).drawRect(this.x, this.y, this.width, this.height);
+	}
 }

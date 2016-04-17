@@ -1,31 +1,36 @@
-function Shape(stage, params)
+if (typeof _SHAPE_ == 'undefined')
 {
-	params = params || {};
+	_SHAPE_ = 'defined'
 
-	this.x = params.x || 0;
-	this.y = params.y || 0;
-	this.color = params.color || new Color({red: 16, green: 96, blue: 240});
+	function Shape(stage, params)
+	{
+		params = params || {};
 
-	this._shape = new createjs.Shape();
+		this.x = params.x || 0;
+		this.y = params.y || 0;
+		this.color = params.color || new Color({red: 16, green: 96, blue: 240});
 
-	stage.addChild(this._shape);
-}
+		this._shape = new createjs.Shape();
 
-Shape.prototype.ToString = function()
-{
-	console.log(this);
-}
+		stage.addChild(this._shape);
+	}
 
-Shape.prototype.setColor = function(color)
-{
-	this.color = color;
-}
+	Shape.prototype.ToString = function()
+	{
+		console.log(this);
+	}
 
-Shape.prototype.RGBA = function()
-{
-	return "rgba(" +
-			this.color.r + "," +
-			this.color.g + "," + 
-			this.color.b + "," + 
-			this.color.a + ")";
+	Shape.prototype.setColor = function(color)
+	{
+		this.color = color;
+	}
+
+	Shape.prototype.RGBA = function()
+	{
+		return "rgba(" +
+				this.color.r + "," +
+				this.color.g + "," + 
+				this.color.b + "," + 
+				this.color.a + ")";
+	}
 }

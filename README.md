@@ -42,6 +42,8 @@ A high-action, 2D space-shooter!
 - [x] Story:				Use Roboto font
 - [ ] Story:		Image support for shapes
 - [ ] Story:		Sprite class
+- [ ] Story:		GUI needs a 'theme' to set basic color scheme
+- [ ] Story:		All GUI elements need to use the theme if provided
 
 - [ ] BUG:			Clean up canvas/window size mis-matching
 - [x] BUG:			Put in pause breaks for all tool scripts (Debug mode only)

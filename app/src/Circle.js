@@ -1,20 +1,25 @@
-function Circle(stage, params)
+if (typeof _CIRCLE_ == 'undefined')
 {
-	params = params || {};
-	Shape.call(this, stage, params);
+	_CIRCLE_ = 'defined'
 
-	this.radius = params.radius || 10;
-}
+	function Circle(stage, params)
+	{
+		params = params || {};
+		Shape.call(this, stage, params);
 
-Circle.prototype = Object.create(Shape.prototype);
-Circle.prototype.constructor = Circle;
+		this.radius = params.radius || 10;
+	}
 
-Circle.prototype.setRadius = function(r)
-{
-	this.radius = r;
-}
+	Circle.prototype = Object.create(Shape.prototype);
+	Circle.prototype.constructor = Circle;
 
-Circle.prototype.Draw = function()
-{
-	this._shape.graphics.beginFill(this.RGBA()).drawCircle(this.x, this.y, this.radius)
+	Circle.prototype.setRadius = function(r)
+	{
+		this.radius = r;
+	}
+
+	Circle.prototype.Draw = function()
+	{
+		this._shape.graphics.beginFill(this.RGBA()).drawCircle(this.x, this.y, this.radius)
+	}
 }
