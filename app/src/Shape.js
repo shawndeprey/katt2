@@ -8,7 +8,7 @@ if (typeof _SHAPE_ == 'undefined')
 
 		this.x = params.x || 0;
 		this.y = params.y || 0;
-		this.color = params.color || new Color({red: 16, green: 96, blue: 240});
+		this.color = params.color || new Color();
 
 		this._shape = new createjs.Shape();
 
@@ -23,14 +23,5 @@ if (typeof _SHAPE_ == 'undefined')
 	Shape.prototype.setColor = function(color)
 	{
 		this.color = color;
-	}
-
-	Shape.prototype.RGBA = function()
-	{
-		return "rgba(" +
-				this.color.r + "," +
-				this.color.g + "," + 
-				this.color.b + "," + 
-				this.color.a + ")";
 	}
 }

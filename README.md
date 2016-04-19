@@ -40,6 +40,7 @@ A high-action, 2D space-shooter!
 - [x] Story:			Create basic color class
 - [ ] Story:			Create a text class
 - [x] Story:				Use Roboto font
+- [ ] Story:			Create a 'text' gui element that has a background rectangle behind the text
 - [ ] Story:		Image support for shapes
 - [ ] Story:		Sprite class
 - [ ] Story:		GUI needs a 'theme' to set basic color scheme

@@ -4,17 +4,18 @@ if (typeof _ENGINE_ == 'undefined')
 	
 	function main()
 	{
-		SetupCanvas();
+		SetupCanvas(800, 600);
 
 		Sandbox();
 	}
 
-	function SetupCanvas()
+	function SetupCanvas(width, height)
 	{
-		console.log("Setting up canvas...");
+
+		console.log("Setting up " + width + "x" + height + " canvas...");
 		var canvas = document.getElementById("canvas");
-		canvas.width = 800;
-		canvas.height = 600;
+		canvas.width = width;
+		canvas.height = height;
 
 		stage = new createjs.Stage(canvas);
 		console.log("Canvas setup complete.");
@@ -26,17 +27,12 @@ if (typeof _ENGINE_ == 'undefined')
 	function Sandbox()
 	{
 		// Text sample
-		myText = new createjs.Text("Hello World", "36px Roboto", "#ffffff");
-		myText.x = 10;
-		myText.y = 50;
-
-		stage.addChild(myText);
-
+		var text = new Text(stage, {x: 200, y: 200, text: "Hello World"});
+		text.Draw();
 
 		// Circle sample
 		var circle = new Circle(stage);
 		circle.Draw();
-		circle.ToString();
 
 
 		// Rectangle sample (stage, x, y, height, width)

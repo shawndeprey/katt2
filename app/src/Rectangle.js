@@ -26,6 +26,6 @@ if (typeof _RECTANGLE_ == 'undefined')
 
 	Rectangle.prototype.Draw = function()
 	{
-		this._shape.graphics.beginFill(this.RGBA()).drawRect(this.x, this.y, this.width, this.height);
+		this._shape.graphics.beginFill(this.color.RGBA()).drawRect(this.x, this.y, this.width, this.height);
 	}
 }
