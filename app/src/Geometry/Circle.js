@@ -13,7 +13,7 @@ if (typeof _CIRCLE_ == 'undefined')
 	Circle.prototype = Object.create(Shape.prototype);
 	Circle.prototype.constructor = Circle;
 
-	Circle.prototype.setRadius = function(r)
+	Circle.prototype.SetRadius = function(r)
 	{
 		this.radius = r;
 	}

@@ -11,7 +11,6 @@ if (typeof _ENGINE_ == 'undefined')
 
 	function SetupCanvas(width, height)
 	{
-
 		console.log("Setting up " + width + "x" + height + " canvas...");
 		var canvas = document.getElementById("canvas");
 		canvas.width = width;

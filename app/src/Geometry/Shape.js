@@ -20,7 +20,7 @@ if (typeof _SHAPE_ == 'undefined')
 		console.log(this);
 	}
 
-	Shape.prototype.setColor = function(color)
+	Shape.prototype.SetColor = function(color)
 	{
 		this.color = color;
 	}

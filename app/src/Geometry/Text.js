@@ -24,7 +24,21 @@ if (typeof _TEXT_ == 'undefined')
 		console.log(this);
 	}
 
-	Text.prototype.setColor = function(color)
+	Text.prototype.GetWidth = function()
+	{
+		// TODO: This is expensive, implement a cache-ing logic
+		//		 with property-like access control
+		return this._text.getMeasuredWidth();
+	}
+
+	Text.prototype.GetHeight = function()
+	{
+		// TODO: This is expensive, implement a cache-ing logic
+		//		 with property-like access control
+		return this._text.getMeasuredHeight();
+	}
+
+	Text.prototype.SetColor = function(color)
 	{
 		this.color = color;
 	}

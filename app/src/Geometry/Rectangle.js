@@ -14,12 +14,12 @@ if (typeof _RECTANGLE_ == 'undefined')
 	Rectangle.prototype = Object.create(Shape.prototype);
 	Rectangle.prototype.constructor = Rectangle;
 
-	Rectangle.prototype.setWidth = function(w)
+	Rectangle.prototype.SetWidth = function(w)
 	{
 		this.width = w;
 	}
 
-	Rectangle.prototype.setHeight = function(h)
+	Rectangle.prototype.SetHeight = function(h)
 	{
 		this.height = h;
 	}
