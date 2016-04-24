@@ -20,6 +20,7 @@ if (typeof _CIRCLE_ == 'undefined')
 
 	Circle.prototype.Draw = function()
 	{
-		this._shape.graphics.beginFill(this.color.RGBA()).drawCircle(this.x, this.y, this.radius)
+		Shape.prototype.Draw.call(this);
+		this._shape.graphics.beginFill(this.color.RGBA()).drawCircle(this.x, this.y, this.radius);
 	}
 }

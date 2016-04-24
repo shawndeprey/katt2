@@ -24,4 +24,9 @@ if (typeof _SHAPE_ == 'undefined')
 	{
 		this.color = color;
 	}
+
+	Shape.prototype.Draw = function()
+	{
+		this._shape.graphics.clear();
+	}
 }

@@ -32,6 +32,8 @@ A high-action, 2D space-shooter!
 * Inno Setup			http://www.jrsoftware.org/isinfo.php
 
 ### TODO
+- [x] STORY:		Implement basic game loop to handle render and updates
+- [ ] STORY:		Clock class to handle timing and game ticks
 - [ ] Story:		Asset Loader
 - [	] Story:		Set up Material Design style GUI in canvas
 - [x] Story:			Create basic shape classes
@@ -54,6 +56,7 @@ A high-action, 2D space-shooter!
 - [ ] RESEARCH:		Use Manifest file to pass command line args (Environment Variables) to the application
 - [ ] RESEARCH:		How to have a launcher download and install the application
 - [ ] RESEARCH:		Cross-platform installer builder OR custom cross-platform installer
+- [ ] RESEARCH:		Look into TogetherJS for multiplayer (https://togetherjs.com/)
 
 - [x] TASK:			Get zip script figured out for Windows 7
 - [ ] TASK:			Icon for game window

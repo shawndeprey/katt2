@@ -2,11 +2,16 @@ if (typeof _ENGINE_ == 'undefined')
 {
 	_ENGINE_ = 'defined'
 	
+	var stage;
+
 	function main()
 	{
 		SetupCanvas(800, 600);
 
-		Sandbox();
+		circle = new Circle(stage, {x: 100, y: 100, radius: 25});
+		rectangle = new Rectangle(stage, { x: 150, y: 150, width: 20, height: 20 });
+
+		requestAnimationFrame(GameLoop);
 	}
 
 	function SetupCanvas(width, height)
@@ -20,24 +25,27 @@ if (typeof _ENGINE_ == 'undefined')
 		console.log("Canvas setup complete.");
 	}
 
-
-
-
-	function Sandbox()
+	function GameLoop()
 	{
-		// Text sample
-		var text = new Text(stage, {x: 200, y: 200, text: "Hello World"});
-		text.Draw();
+		Update();
+		Render();
 
-		// Circle sample
-		var circle = new Circle(stage);
+		requestAnimationFrame(GameLoop);
+	}
+
+	function Update()
+	{
+		circle.x += 0.5;
+	}
+
+	function Render()
+	{
+		stage.clear();
+
+
 		circle.Draw();
-
-
-		// Rectangle sample (stage, x, y, height, width)
-		var rectangle = new Rectangle(stage, { x: 150, y: 150, width: 20, height: 20 });
 		rectangle.Draw();
-		
+
 
 		stage.update();
 	}
