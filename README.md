@@ -26,16 +26,25 @@ A high-action, 2D space-shooter!
 
 ### Technology
 
+* NodeJS v5.10.1		https://nodejs.org/dist/v5.10.1/node-v5.10.1-x64.msi
 * Node Webkit Wrapper	https://github.com/nwjs/nw.js
-* Pixi.js v3.0.11		http://www.pixijs.com/
+* CreateJS				http://www.createjs.com/
 * Inno Setup			http://www.jrsoftware.org/isinfo.php
 
 ### TODO
-- [x] STORY:		Get zip script figured out for Windows 7
-- [ ] STORY:		Icon for game window
-- [ ] STORY: 		Create 'Aliases' file to mitigate deprecation extra-work
-- [ ] STORY:		Auto-resize canvas to fit window
-- [x] STORY:		In build_d.bat, store base folder name in variable to reset it later
+- [ ] Story:		Asset Loader
+- [	] Story:		Set up Material Design style GUI in canvas
+- [x] Story:			Create basic shape classes
+- [x] Story:				Rectangle
+- [x] Story:				Circle
+- [x] Story:			Create basic color class
+- [ ] Story:			Create a text class
+- [x] Story:				Use Roboto font
+- [ ] Story:			Create a 'text' gui element that has a background rectangle behind the text
+- [ ] Story:		Image support for shapes
+- [ ] Story:		Sprite class
+- [ ] Story:		GUI needs a 'theme' to set basic color scheme
+- [ ] Story:		All GUI elements need to use the theme if provided
 
 - [ ] BUG:			Clean up canvas/window size mis-matching
 - [x] BUG:			Put in pause breaks for all tool scripts (Debug mode only)
@@ -46,8 +55,13 @@ A high-action, 2D space-shooter!
 - [ ] RESEARCH:		How to have a launcher download and install the application
 - [ ] RESEARCH:		Cross-platform installer builder OR custom cross-platform installer
 
+- [x] TASK:			Get zip script figured out for Windows 7
+- [ ] TASK:			Icon for game window
+- [ ] TASK: 		Create 'Aliases' file to mitigate deprecation extra-work
+- [ ] TASK:			Auto-resize canvas to fit window
+- [x] TASK:			In build_d.bat, store base folder name in variable to reset it later
 - [ ] TASK:			Use build script to 'package' the package.json in prior to building
 - [ ] TASK:			Build script can choose which version to build; dev, testing, production, etc...
 - [ ] TASK:			Setup deploy script to build installer for deployment
 - [ ] TASK:			Create license file
-- [ ] TASK:			Build increments version
+- [ ] TASK:			Set up unit test framework

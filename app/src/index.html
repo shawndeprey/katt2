@@ -10,37 +10,38 @@
 				background-color: rgb(0,0,0);
 			}
 		</style>
-		<script src="pixi.min.js"></script>
-	</head>
-	<body>
-		<script>
-			var renderer = PIXI.autoDetectRenderer(800, 600, {backgroundColor: 0x66FF99});
-			document.body.appendChild(renderer.view);
+		<!-- CreateJS modules -->
+		<script src="libraries/easeljs-0.8.2.min.js"></script>
+		<script src="libraries/preloadjs-0.6.2.min.js"></script>
+		<script src="libraries/soundjs-0.6.2.min.js"></script>
+		<script src="libraries/tweenjs-0.6.2.min.js"></script>
+		<script src="libraries/webgl-0.8.2.min.js"></script>
+		
+		<!-- Engine -->
+		<script src="Engine.js"></script>
+		<script src="Geometry/Color.js"></script>
+		<script src="Geometry/Shape.js"></script>
+		<script src="Geometry/Rectangle.js"></script>
+		<script src="Geometry/Circle.js"></script>
+		<script src="Geometry/Text.js"></script>
+		<script src="Geometry/GUI/TextBox.js"></script>
 
-			var stage = new PIXI.Container();
+		<!-- Include Assets -->
+		<style type="text/css">
 
-			var texture = PIXI.Texture.fromImage('../assets/sprites/bunny.png');
-
-			var bunny = new PIXI.Sprite(texture);
-
-			bunny.anchor.x = 0.5;
-			bunny.anchor.y = 0.5;
-
-			bunny.position.x = 200;
-			bunny.position.y = 150;
-
-			stage.addChild(bunny);
-
-			animate();
-
-			function animate()
-			{
-				requestAnimationFrame(animate);
-
-				bunny.rotation += 0.1;
-
-				renderer.render(stage);
+			@font-face {
+				font-family:"Roboto";
+				src: url("../assets/fonts/RobotoTTF/Roboto-Black.ttf")
 			}
-		</script>
+
+		</style>
+	</head>
+	<body onload="main();">
+		<canvas id="canvas" width="800" height="600">
+		We're sorry, but a modern browser that supports HTML5 canvas is required.
+		</canvas>
 	</body>
+	<script>
+		
+	</script>
 </html>
