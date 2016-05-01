@@ -42,10 +42,8 @@ if (typeof _ENGINE_ == 'undefined')
 	{
 		stage.clear();
 
-
 		circle.Draw();
 		rectangle.Draw();
-
 
 		stage.update();
 	}
